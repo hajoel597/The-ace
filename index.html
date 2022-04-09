@@ -9,6 +9,12 @@
        border-bottom:5px solid black;
      }
   </style>
+  <script>
+    function btnClick()
+    {
+      alert('예약이 완료되었습니다')
+    }
+  </script>
 </head>
 <body>
   <h1>The Ace 예약</h1>
@@ -34,10 +40,11 @@
         </tr>
 </div>
 <div>
-  <form method="post" action="https://api.sheetmonkey.io/form/6YjDtMyJSi2wfcbLgBfiMN">
+  <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
+  <form method="post" action="https://api.sheetmonkey.io/form/6YjDtMyJSi2wfcbLgBfiMN" target="iframe1">
       <input type="text" name="이름" placeholder="성함을 입력해주십시오" required></br>
       <input type="tel" name="전화번호" placeholder="번호를 입력해주십시오" required></br>
       <input type="datetime-local" name="예약시간" required>
-      <input type="submit" name="submit">
+      <input type="submit" name="submit" onclick='btnClick()'>
   </form>
   </table>
