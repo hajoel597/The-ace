@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @media all and (max-width: 1200px){
-  .wrap{flex-direction: column; text-align: center;}
+  main{padding: 0 0 0 0; width: 100%;} 
+  .wrap{flex-direction: column;
+    align-items: center;
+    text-align: center;}
   .list-1{top: 50%; left: 50%;}
   #m-2 .txt-box a{padding-right: 5%;}
 }
@@ -52,6 +55,8 @@ img {
   width: 400px;
   height: 500px;
   position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 #m-2 .img{
   width: 100%;
