@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@media all and (max-width: 1200px){
-  main{padding: 0 0 0 0; width: 100%;} 
-  .wrap{flex-direction: column;
-    align-items: center;
-    text-align: center;}
-  .list-1{top: 50%; left: 50%;}
-  #m-2 .txt-box a{padding-right: 5%;}
-}
+
 body{
   margin: 0 0 0 0;
 }
@@ -34,21 +27,22 @@ img {
   width: 100%;
   height: auto;
   display: flex;
+  justify-content: space-around;
 }
 #m-1 .txt{
-  width: 100%;
-  height:  auto;
+  width: 600px;
+  height: 500px;
 }
 #m-1 .img-box{
-  width: 100%;
-  height:  auto;
+  width:600px;
+  height: 500px;
   text-align: center;
 }
 #m-2 .wrap{
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 #m-2 .box-wrap{
@@ -70,7 +64,7 @@ img {
 }
 #m-2 .txt-box{
   width: 100%;
-  top: 10%;
+  top: 20%;
   position: absolute;
 }
 #m-2 .txt-box a{
@@ -87,7 +81,7 @@ img {
 }
 #m-2 .txt-box-d{
   width: 100%;
-  bottom: 10%;
+  bottom: 20%;
   position: absolute;
 }
 #m-2 .txt-box-d a{
@@ -106,15 +100,19 @@ img {
   width: 100%;
   height: auto;
   display: flex;
+  justify-content: space-around;
 }
 #m-3 .box{
   text-align: right;
+  padding-right: 12%;
 }
 #m-3 .img-box-1{
-  width: 100%;
+  width: 470px;
   height: auto;
 }
 #m-3 .img-wrap-1{
+  width: 470px;
+  height: 590px;
 }
 #m-3 .img-1{
   width: 470px;
@@ -129,7 +127,7 @@ img {
   list-style-position: inside;
 }
 #m-3 .img-box-2{
-  width: 100%;
+  width: 470px;
   height: auto;
   text-align: right;
 }
@@ -158,4 +156,20 @@ img {
   font-size: 20px;
   font-family: sans-serif;
   letter-spacing: 5px;
+}
+@media all and (max-width: 1200px){
+  *{align-items: center; text-align: center;}
+  .wrap{flex-direction: column;}
+  .img{ height: auto; width: 100;}
+  #m-1 .txt{width: 100%;}
+  #m-1 .img-box{width:100%;height: auto;}
+  #m-2 .txt-box a{padding-right: 5%;}
+  #m-2 .box-wrap{width: 100%;height: auto;}
+  #m-3 .box {padding-right: 0;}
+  #m-3 .img-box-1{width: 100%;}
+  #m-3 .img-wrap-1{width: 100%;height: auto;}
+  #m-3 .img-1{width: 100%; height: auto;}
+  #m-3 .img-box-2{width: 100%;}
+  #m-3 .img-wrap-2{width: 100%;height: auto;}
+  #m-3 .img-2{width: 100%; height: auto;}
 }
