@@ -5,9 +5,6 @@ body{
 }
 main{
   font-family: 'Noto Sans KR', sans-serif;
-  width: 90%;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 img {
   max-width: 100%;
@@ -22,6 +19,16 @@ img {
   padding-left: 3%;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+.baner-back{
+  padding:300px 100px;
+  background-color: white;
+  height: 300px;
+}
+.m-wrap{
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 #m-1 .wrap{
   width: 100%;
@@ -100,11 +107,16 @@ img {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 #m-3 .box{
   text-align: right;
-  padding-right: 12%;
+}
+#m-3 h1{
+  padding-right: 15%;
+}
+#m-3 h3{
+  padding-right: 15%;
 }
 #m-3 .img-box-1{
   width: 470px;
