@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 body{
+  width: 100%;
   margin: 0 0 0 0;
+  overflow-x: hidden;
 }
 main{
   font-family: 'Noto Sans KR', sans-serif;
@@ -19,6 +21,8 @@ img {
   padding-left: 3%;
   padding-top: 1%;
   padding-bottom: 1%;
+  width: auto;
+  height: 65px;
 }
 .baner-back{
   padding:300px 100px;
@@ -60,7 +64,7 @@ img {
 }
 #m-2 .txt{
   width: 600px;
-  height: 500px;
+  height: auto;
 }
 #m-3 .wrap{
   width: 100%;
@@ -70,6 +74,9 @@ img {
 }
 #m-3 .box{
   text-align: right;
+}
+#m-3 .box-1{
+  visibility: hidden;
 }
 #m-3 .img-box-1{
   width: 470px;
@@ -86,7 +93,7 @@ img {
 #m-3 .list-1{
   background-color: white;
   width: auto;
-  height: 50%;
+  height: auto;
   top:50%;
   right: 50%;
   list-style-position: inside;
@@ -103,30 +110,30 @@ img {
 #m-3 .list-2{
   background-color: white;
   width: auto;
-  height: 50%;
+  height: auto;
   top: 50%;
   left: 50%;
   list-style-position: inside;
 }
-#m-4 .box{
-  text-align: left;
-}
-.cf{
+#m-3 .cf{
   margin: 0 0 0 0;
   font-size: 24px;
 }
-.cf-n{
+#m-3 .cf-n{
   margin: 0 0 0 0;
   font-size: 30px;
 }
-.cf-en{
+#m-3 .cf-en{
   margin: 0 0 0 0;
   font-size: 20px;
   font-family: sans-serif;
   letter-spacing: 5px;
 }
+#m-4 .box{
+  text-align: left;
+}
 @media all and (max-width: 1200px){
-  *{align-items: center; text-align: center;}
+  *{align-items: center; text-align: center; margin: 0 0 0 0; padding:0 0 0 0; border: 0 0 0 0; overflow-x: hidden;}
   .logo{width: 30%; height: 30%;}
   .wrap{flex-direction: column;}
   .img{ height: auto; width: 100;}
@@ -141,4 +148,6 @@ img {
   #m-3 .img-box-2{width: 100%;}
   #m-3 .img-wrap-2{width: 100%;height: auto;}
   #m-3 .img-2{width: 100%; height: auto;}
+  #m-3 ul{padding: 0 0 0 0}
+  #m-3 li{direction: ltr;}
 }

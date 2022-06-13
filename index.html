@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    <script src="aos-master/dist/aos.js"></script>
     <title></title>
   </head>
   <body>
+    <script>AOS.init(1000); // 자바스크립트로 init()을 해야 동작한다.</script>
     <header>
     </header>
     <main class="m">
@@ -18,7 +21,7 @@
     <div class="m-wrap">
       <div class="m-1" id="m-1">
         <div class="wrap">
-          <div class="txt">
+          <div class="txt" data-aos="fade-right">
               <h3>Restaurant The Ace</h3>
               <h1>The Ace Story</h1>
               <p>레스토랑 에이스에서 선보이는 음식은<br>
@@ -28,7 +31,7 @@
                 It's a dish that contains the identity of a chef To protect and develop the individual growth and legitimacy of the chef,
                 The restaurant A.C.E's own dish is presented.</p>
           </div>
-          <div class="img-box">
+          <div class="img-box" data-aos="fade-right">
               <img src="img\food\1.jpg" alt="123" class="img">
           </div>
           </div>
@@ -36,15 +39,15 @@
       </div>
       <div class="m-2" id="m-2">
       <div class="m-wrap">
-        <div class="box">
+        <div class="box"  data-aos="fade-left">
           <h3>Restaurant The Ace</h3>
           <h1>The Ace Menu</h1>
         </div>
-        <div class="wrap">
+        <div class="wrap" data-aos="fade-left">
           <div class="txt">
             <p>레스토랑 에이스에서 이번 선보이는 코스는 각각의 요리가 셰프 각자의 시그니쳐 메뉴로 선보입니다.<br>
             각각의 요리는 서로 상호작용하고 다른 코스의 음식을 더욱 돋구는 역할을 합니다. 정교하게 짜여진 코스 요리를 즐겨보세요.</p>
-            <img src="" alt="" class="img">
+            <img src="img\food\2.jpg" alt="" class="img">
           </div>
           <div class="">
             <h1>FIRST DISH</h1>
@@ -71,18 +74,19 @@
           </div>
         </div>
       </div>
+      </DIV>
       <div class="m-3" id="m-3">
         <div class="m-wrap">
-        <div class="box">
-          <h3>Restaurant The Ace</h3>
-          <h1>The Ace People</h1>
-        </div>
-        <div class="wrap">
+        <div class="wrap" data-aos="fade-left">
           <div class="img-box-1">
-            <div class="img-wrap-1">
+            <div class="box-1">
+              <h3>Restaurant The Ace</h3>
+              <h1>The Ace People</h1>
+            </div>
+            <div class="img-wrap-1" data-aos="fade-left">
                 <img src="img\food\1.jpg" alt="123" class="img-2">
             </div>
-                <div class="list-1">
+                <div class="list-1" data-aos="fade-left">
                   <ul>
                     <p class="cf">Chef No.1</p>
                     <p class="cf-n"><strong>하민용</strong> 셰프</p>
@@ -94,10 +98,14 @@
                 </div>
           </div>
           <div class="img-box-2">
+            <div class="box">
+              <h3>Restaurant The Ace</h3>
+              <h1>The Ace People</h1>
+            </div>
             <div class="img-wrap-2">
                 <img src="img\people\1.jpg" alt="123" class="img-2">
             </div>
-                 <div class="list-2" dir="rtl">
+                 <div class="list-2" dir="rtl" data-aos="fade-left">
                   <ul>
                     <p class="cf">Chef No.2</p>
                     <p class="cf-n"><strong>박지우</strong> 셰프</p>
