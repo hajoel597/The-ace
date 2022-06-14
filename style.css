@@ -3,7 +3,6 @@
 body{
   width: 100%;
   margin: 0 0 0 0;
-  overflow-x: hidden;
 }
 main{
   font-family: 'Noto Sans KR', sans-serif;
@@ -24,15 +23,45 @@ img {
   width: auto;
   height: 65px;
 }
-.baner-back{
-  padding:300px 100px;
-  background-color: white;
-  height: 300px;
+.m-ban{
+  height: 800px;
+  width: auto;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .m-wrap{
   width: 90%;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 10%;
 }
 #m-1 .wrap{
   width: 100%;
@@ -130,13 +159,34 @@ img {
   letter-spacing: 5px;
 }
 #m-4 .box{
+  padding-left: 10%;
   text-align: left;
 }
+#m-4 .loc{
+  width: auto;
+  position: relative;
+  text-align: center;
+}
+#m-4 .book{
+  margin: 0 0 0 0;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  position: relative;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+}
+#m-4 .book-txt{
+  padding-left: 5%;
+}
 @media all and (max-width: 1200px){
-  *{align-items: center; text-align: center; margin: 0 0 0 0; padding:0 0 0 0; border: 0 0 0 0; overflow-x: hidden;}
+  html, body {max-width: 100%;overflow-x: hidden;}
+  *{align-items: center; text-align: center;}
   .logo{width: 30%; height: 30%;}
   .wrap{flex-direction: column;}
   .img{ height: auto; width: 100;}
+  .m-ban{height: 700px;width: auto;}
   #m-1 .txt{width: 100%;}
   #m-1 .img-box{width:100%;height: auto;}
   #m-2 .txt{width: 100%;}
@@ -150,4 +200,4 @@ img {
   #m-3 .img-2{width: 100%; height: auto;}
   #m-3 ul{padding: 0 0 0 0}
   #m-3 li{direction: ltr;}
-}
+  #m-4 .book{left: 5%; top: 75%;}
