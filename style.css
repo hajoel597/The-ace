@@ -201,3 +201,5 @@ img {
   #m-3 ul{padding: 0 0 0 0}
   #m-3 li{direction: ltr;}
   #m-4 .book{left: 5%; top: 75%;}
+  #m-4 .box{padding-left:0%;}
+}
