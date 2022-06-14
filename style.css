@@ -187,6 +187,8 @@ img {
   .wrap{flex-direction: column;}
   .img{ height: auto; width: 100;}
   .m-ban{height: 700px;width: auto;}
+  h1{ font-size: 34px;}
+  h3{ font-size: 16px;}
   #m-1 .txt{width: 100%;}
   #m-1 .img-box{width:100%;height: auto;}
   #m-2 .txt{width: 100%;}
