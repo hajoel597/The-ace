@@ -132,9 +132,13 @@ img {
   height: auto;
   text-align: right;
 }
-#m-3 .img-2{
+#m-3 .img-1{
   width: 470px;
-  height: 590px;
+  height: 590pxs
+}
+#m-3 .img-2{
+  width: auto;
+  height: 250px;
 }
 #m-3 .list-2{
   background-color: white;
